@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
@@ -46,6 +44,7 @@ Plugin 'https://github.com/spf13/vim-autoclose.git'
 Plugin 'https://github.com/godlygeek/tabular.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'https://github.com/google/vim-searchindex'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -119,6 +118,7 @@ set scrolloff=3                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+set foldmethod=indent
 
 " SnipMate
 let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
