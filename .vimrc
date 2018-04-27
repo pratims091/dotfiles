@@ -119,6 +119,9 @@ set foldenable                  " Auto fold code
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set foldmethod=indent
+" check one time after 4s of inactivity in normal mode
+set autoread
+au CursorHold * checktime
 
 " SnipMate
 let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
