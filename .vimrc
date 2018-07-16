@@ -45,6 +45,8 @@ Plugin 'https://github.com/godlygeek/tabular.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'https://github.com/google/vim-searchindex'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -108,7 +110,6 @@ set linespace=0 "No extra spaces between rows
 set number "Line numbers on
 set showmatch "Show matching brackets/parenthesis
 set incsearch "Find as you type search
-set hlsearch "Highlight search terms
 set winminheight=0 "Windows can be 0 line high
 set ignorecase "Case insensitive search
 set smartcase "Case sensitive when uc present
@@ -119,6 +120,7 @@ set foldenable                  " Auto fold code
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set foldmethod=indent
+set title
 " check one time after 4s of inactivity in normal mode
 set autoread
 au CursorHold * checktime
@@ -133,3 +135,12 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Remove trailing white spaces automatically.
+autocmd BufWritePre * %s/\s\+$//e
+
+" ctrlsf
+let g:ctrlsf_ignore_dir = ['bower_components', 'node_modules', 'log', 'build', 'coverage']
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
