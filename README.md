@@ -25,5 +25,7 @@ Inspired from [spf13vim](https://github.com/spf13/spf13-vim), light weight vim c
 * [tagbar: Vim plugin that displays tags in a window, ordered by scope](https://github.com/majutsushi/tagbar)
 * [vim colorschemes: one colorscheme pack to rule them all!](https://github.com/flazz/vim-colorschemes)
 * [vim-searchindex: display number of search matches & index of a current match](https://github.com/google/vim-searchindex)
+* [YouCompleteMe: A code-completion engine for Vim](https://github.com/Valloric/YouCompleteMe)
+* [supertab: Perform all your vim insert mode completions with Tab](https://github.com/ervandew/supertab)
 
 ***Always gratefull to the original authors.***
