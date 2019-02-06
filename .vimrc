@@ -47,6 +47,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'https://github.com/google/vim-searchindex'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
+Plugin 'terryma/vim-multiple-cursors'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -58,11 +59,11 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " open a NERDTree automatically when vim starts up if no files were specified
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeToggle<CR>
 
 colorscheme railscasts
 
-set tags=/home/pratim/work/tags;
+" set tags=/home/pratim/tags;
 set mouse=a                 " Automatically enable mouse usage
 set mousehide               " Hide the mouse cursor while typing
 scriptencoding utf-8
@@ -144,3 +145,15 @@ let g:ctrlsf_ignore_dir = ['bower_components', 'node_modules', 'log', 'build', '
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+if ( has( "gui_running" ) )
+  set guioptions-=m
+  set guioptions-=r
+  set guioptions-=L
+  set guioptions-=T
+  set mouse=n
+  " set guifont=Hack\ Regular:h13
+  " set guifont=Fira\ Code:h13
+endif
+
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
