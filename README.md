@@ -27,5 +27,6 @@ Inspired from [spf13vim](https://github.com/spf13/spf13-vim), light weight vim c
 * [vim-searchindex: display number of search matches & index of a current match](https://github.com/google/vim-searchindex)
 * [YouCompleteMe: A code-completion engine for Vim](https://github.com/Valloric/YouCompleteMe)
 * [supertab: Perform all your vim insert mode completions with Tab](https://github.com/ervandew/supertab)
+* [vim-multiple-cursors: True Sublime Text style multiple selections for Vim](https://github.com/terryma/vim-multiple-cursors)
 
 ***Always gratefull to the original authors.***
